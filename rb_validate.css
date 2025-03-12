@@ -1,0 +1,36 @@
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Review Assignment
+
+   Customer Information Validation Style Sheet
+   Author: Ken
+   Date: 03/11/2025 
+
+   Filename: rb_validate.css
+
+*/
+
+
+/* Validation Styles */
+
+/* Rule for input, select, and textarea elements with focus */
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(255, 255, 180);
+ }
+ 
+ /* Rule for nameBox and phoneBox with focus and valid data */
+ #nameBox:focus:valid, #phoneBox:focus:valid {
+   background-color: rgb(220, 255, 220);
+   background-image: url('rb_okay.png');
+   background-repeat: no-repeat;
+   background-position: right;
+ }
+ 
+ /* Rule for nameBox and phoneBox with focus and invalid data */
+ #nameBox:focus:invalid, #phoneBox:focus:invalid {
+   background-color: rgb(255, 230, 230);
+   background-image: url('rb_warning.png');
+   background-repeat: no-repeat;
+   background-position: right;
+ }
